@@ -29,7 +29,27 @@
                             <div style="border: 1px solid #000; width: 20px; height: 20px; display: inline-block; vertical-align: middle;"></div>
                         </td>
                         <td>
-                            <t t-esc="line.name"/>
+                            <!-- Nombre del producto -->
+                            <strong>
+                                <span t-field="line.product_id.name"/>
+                            </strong>
+                            <br/>
+
+                            <!-- Referencia interna -->
+                            <t t-if="line.product_id.default_code">
+                                <span style="color: #6c757d; font-size: 11px;">
+                                    [<t t-esc="line.product_id.default_code"/>]
+                                    <t t-esc="line.product_id.name"/>
+                                </span>
+                                <br/>
+                            </t>
+
+                            <!-- Descripción -->
+                            <t t-if="line.product_id.description_sale">
+                                <span style="font-size: 11px;">
+                                    <t t-esc="line.product_id.description_sale"/>
+                                </span>
+                            </t>
                         </td>
                         <td class="text-right">
                             <span t-field="line.product_uom_qty"/>
