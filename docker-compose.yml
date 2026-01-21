@@ -18,14 +18,14 @@ services:
       - .config/:/etc/odoo/
 
   db:
-    image: postgres
+    image: postgres:15
     container_name: odoo_db_reportes
     environment:
       - POSTGRES_USER=odoo
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_DB=postgres
     volumes:
-      - db_data:/var/lib/postgresql
+      - db_data:/var/lib/postgresql/data
 
   pgadmin:
     image: dpage/pgadmin4:latest
