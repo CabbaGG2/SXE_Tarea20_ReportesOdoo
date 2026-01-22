@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="modulo_reporte_heredado.list">
+      <field name="name">modulo_reporte_heredado list</field>
+      <field name="model">modulo_reporte_heredado.modulo_reporte_heredado</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="modulo_reporte_heredado.action_window">
+      <field name="name">modulo_reporte_heredado window</field>
+      <field name="res_model">modulo_reporte_heredado.modulo_reporte_heredado</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="modulo_reporte_heredado.action_server">
+      <field name="name">modulo_reporte_heredado server</field>
+      <field name="model_id" ref="model_modulo_reporte_heredado_modulo_reporte_heredado"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="modulo_reporte_heredado" id="modulo_reporte_heredado.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="modulo_reporte_heredado.menu_1" parent="modulo_reporte_heredado.menu_root"/>
+    <menuitem name="Menu 2" id="modulo_reporte_heredado.menu_2" parent="modulo_reporte_heredado.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="modulo_reporte_heredado.menu_1_list" parent="modulo_reporte_heredado.menu_1"
+              action="modulo_reporte_heredado.action_window"/>
+    <menuitem name="Server to list" id="modulo_reporte_heredado" parent="modulo_reporte_heredado.menu_2"
+              action="modulo_reporte_heredado.action_server"/>
+-->
+  </data>
+</odoo>

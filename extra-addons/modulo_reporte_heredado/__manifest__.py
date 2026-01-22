@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "modulo_reportes",
+    'name': "modulo_reporte_heredado",
 
-    'summary': "Modulo que realiza un reporte de cero para las ventas del servicio Odoo.",
+    'summary': "Modulo que realiza una modificación menor en el reporte de ventas.",
 
     'description': """
-Modulo que realizar un reporte desde cero que podrá ser descargado desde Ventas.
+Modulo que realizar una modificación en el reporte de Ventas heredandolo y añadiendo los cambios en la zona correcta.
     """,
 
     'author': "CabbaGG Corp.",
@@ -24,9 +24,8 @@ Modulo que realizar un reporte desde cero que podrá ser descargado desde Ventas
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
-        'report/report_actions.xml',
-        'report/report_template.xml',
         'views/templates.xml',
+        'report/report_presupuesto_firma.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

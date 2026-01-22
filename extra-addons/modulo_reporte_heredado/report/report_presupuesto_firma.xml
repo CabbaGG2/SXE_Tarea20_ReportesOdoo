@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="report_saleorder_horario" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//div[@name='so_total_summary']" position = "after">
+                <div class="row justify-content-center" style="margin-top: 150px; page-break-inside: avoid;">
+                <div class="col-12 text-center">
+                    <div style="border-top: 1px solid black; width: 100%; margin: 0 auto; padding-top: 5px;">
+                        <span style="color: gray;">
+                            <strong>Aviso Importante:</strong>
+                        </span>
+                        <!-- salto de linea que acepta XML -->
+                        <span>&#160;</span>
+
+                        <span style="font-size: 10px; color: gray;">
+                                El horario de recepción de mercancía y atención telefónica es de Lunes a Viernes de 08:00 a 16:00
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

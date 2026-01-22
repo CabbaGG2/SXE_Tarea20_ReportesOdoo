@@ -10,15 +10,15 @@
               <div class="text-center mt-4 mb-4">
                 <h1>Orden de Preparación</h1>
                   <h3><span t-field="o.name"/></h3>
-                  <table style = "width: 100%; margin-top: 10px; border: none;">
-                    <tr>
-                      <td style="width: 50%; text-align: left; padding: 0;">
-                        <strong>Cliente:</strong> <span t-field="o.partner_id.name"/>
-                      </td>
-                      <td style="width: 50%; text-align: right; padding: 0;">
-                        <strong>Fecha:</strong> <span t-field="o.date_order" t-options='{"widget": "date"}'/>
-                      </td>
-                    </tr>
+                  <table class="table-borderless" style="width: 100%; margin-top: 10px;">
+                      <tr>
+                        <td style="width: 50%; text-align: left; padding: 0; vertical-align: middle;">
+                          <strong>Cliente:</strong> <span t-field="o.partner_id.name"/>
+                        </td>
+                        <td style="width: 50%; text-align: right; padding: 0; vertical-align: middle;">
+                          <strong>Fecha:</strong> <span t-field="o.date_order" t-options='{"widget": "date"}'/>
+                        </td>
+                      </tr>
                   </table>
                 <!--<p><strong>Cliente:</strong> <span t-field="o.partner_id.name"/></p>
                 <p><strong>Fecha:</strong> <span t-field="o.date_order" t-options='{"widget": "date"}'/></p>
@@ -72,9 +72,180 @@
               </table>
 
             </div>
+            <div class="row justify-content-center" style="margin-top: 150px; page-break-inside: avoid;">
+                <div class="col-6 text-center">
+                    <div style="border-top: 1px solid black; width: 80%; margin: 0 auto; padding-top: 5px;">
+                        <strong>Firma del Operario</strong>
+                    </div>
+                </div>
+            </div>
           </t>
         </t>
       </t>
     </template>
   </data>
 </odoo>
+
+<!-- so_total_summary -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- si lees esto diego tkm -->
+        <!-- si lees esto te debo un cafe -->
